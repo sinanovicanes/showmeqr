@@ -84,12 +84,12 @@ function resetValues() {
 }
 
 function login() {
-    if (username.value.length < 6 || username.value.length > 24) {
-        alert("Kullanıcı adınız en az 6 en fazla 24 karakter uzunluğunda olabilir");
+    if (username.value.length < 4 || username.value.length > 24) {
+        alert("Kullanıcı adınız en az 4 en fazla 24 karakter uzunluğunda olabilir");
         resetValues();
         return;
-    } else if (password.value.length < 6 || password.value.length > 24) {
-        alert("Girilen şifre en az 6 en fazla 24 karakter uzunluğunda olabilir");
+    } else if (password.value.length < 4 || password.value.length > 24) {
+        alert("Girilen şifre en az 4 en fazla 24 karakter uzunluğunda olabilir");
         resetValues();
         return;
     }
@@ -105,12 +105,12 @@ function login() {
 }
 
 function register() {
-    if (username.value.length < 6 || username.value.length > 24) {
-        alert("Kullanıcı adınız en az 6 en fazla 24 karakter uzunluğunda olabilir");
+    if (username.value.length < 4 || username.value.length > 24) {
+        alert("Kullanıcı adınız en az 4 en fazla 24 karakter uzunluğunda olabilir");
         resetValues();
         return;
-    } else if (password.value.length < 6 || password.value.length > 24) {
-        alert("Girilen şifre en az 6 en fazla 24 karakter uzunluğunda olabilir");
+    } else if (password.value.length < 4 || password.value.length > 24) {
+        alert("Girilen şifre en az 4 en fazla 24 karakter uzunluğunda olabilir");
         resetValues();
         return;
     } else if (password.value !== password2.value) {

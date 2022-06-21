@@ -95,7 +95,7 @@ export class Database {
     }
 
     async login(loginData: loginData) {
-        const res = await this.Query(`SELECT * FROM users WHERE username = "${loginData.username}"`);
+        const res = await this.Query(`SELECT * FROM users WHERE username = "${loginData.username}" OR mail = "${loginData.username}"`);
 
         if (res[0]) {
             if (await this.PasswordManager.isValidPassword(loginData.password, res[0].password)) {
